@@ -1,4 +1,5 @@
 <?php
+// V.0.1.1
 /* This program is free software. It comes without any warranty, to
  * the extent permitted by applicable law. You can redistribute it
  * and/or modify it under the terms of the Do What The Fuck You Want
@@ -92,8 +93,8 @@ function redirect_to_image($image_object)
 
 // Main script
 
-$dir_param = $_GET['dir'] ?: NULL;
-$mode = $_GET['mode'] ?: NULL;
+$dir_param = isset($_GET['dir']) ? $_GET['dir']: NULL;
+$mode = isset($_GET['mode']) ? $_GET['mode']: NULL;
 if(!$mode or $config['allow_mode_change'] == false) {
 	$mode = $config['mode'];
 }

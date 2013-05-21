@@ -25,6 +25,9 @@ http://domain.com/index.php?dir=cats&mode=redirect
   * `redirect`: Returns a `location` header with picked image's URL
     * 2 requests to get the image
   
+## Requirements ##
+
+PHP 5 with Fileinfo extension 
 
 
 # Config #
@@ -40,10 +43,14 @@ $config['allow_mode_change'] = true;
 
 # Change log #
 
+V.0.1.1 : Bug fixes
+
 V.0.1 : Initial release
+
 
 # TODO #
 
 * Resize/Crop
 * Select image
 * Directories cache
+* Error handling
